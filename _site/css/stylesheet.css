@@ -1,0 +1,206 @@
+nav {
+  height: 150px;
+  line-height: 150px;
+  padding: 0px 75px;
+  background: none;
+  box-shadow: none;
+  color: #000;
+  font-family: 'Poppins', sans-serif; }
+  nav .brand-logo {
+    color: #000; }
+    nav .brand-logo .semi-bold {
+      font-weight: 600; }
+  nav .sidenav-trigger i {
+    color: #000;
+    height: 150px !important;
+    line-height: 150px !important;
+    font-size: 2.5rem; }
+  nav ul li a {
+    color: #000;
+    margin: 0px 10px;
+    padding: 0px 10px; }
+  nav ul li a:hover {
+    background-color: #fff; }
+  nav ul li:hover {
+    background-color: #fff; }
+
+.sidenav {
+  font-family: 'Poppins', sans-serif;
+  padding: 25px 0; }
+  .sidenav .brand-logo {
+    color: #000;
+    font-size: 35px;
+    margin: 25px 0;
+    display: block; }
+  .sidenav li .btn {
+    width: 70%;
+    margin: 35px auto !important;
+    text-align: center; }
+  .sidenav li .btn:hover {
+    background-color: #4464ad !important; }
+
+/* Color definitions */
+.light-darkblue .btn {
+  background-color: #4464ad;
+  color: #fff;
+  box-shadow: none;
+  padding: 25px 35px;
+  line-height: 0; }
+.light-darkblue .btn:hover {
+  opacity: .8;
+  background-color: #4464ad; }
+.light-darkblue .textbox {
+  background-color: #4464ad;
+  color: #fff; }
+  .light-darkblue .textbox .btn {
+    background-color: #fff;
+    color: #4464ad;
+    box-shadow: none;
+    padding: 25px 35px;
+    line-height: 0; }
+
+.darkblue-light {
+  color: #fff;
+  background-color: #4464ad; }
+  .darkblue-light .btn {
+    background-color: #fff;
+    color: #4464ad;
+    box-shadow: none;
+    padding: 25px 35px;
+    line-height: 0; }
+  .darkblue-light .btn:hover {
+    opacity: .8;
+    background-color: #fff; }
+
+.light-allblue {
+  color: #4464ad;
+  background-color: #fff; }
+  .light-allblue .btn {
+    background-color: #4464ad;
+    color: #fff;
+    box-shadow: none;
+    padding: 25px 35px;
+    line-height: 0; }
+
+html {
+  scroll-behavior: smooth; }
+
+p {
+  font-family: 'Open Sans', sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif; }
+
+.btn {
+  border-radius: 0px; }
+
+.textbox {
+  padding: 35px 65px; }
+  .textbox h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: calc(35px + (45 - 35) * ((100vw - 522px) / (1912 - 522))) !important;
+    padding: 10px 0px;
+    margin: 0;
+    text-align: center; }
+  .textbox p {
+    font-size: calc(20px + (22 - 20) * ((100vw - 522px) / (1912 - 522))) !important; }
+  .textbox .btn {
+    padding: 30px 40px !important; }
+
+#header {
+  padding: 25px 75px;
+  padding-top: 10vmax;
+  min-height: 90vh; }
+  #header h1 {
+    font-family: "Open Sans", sans-serif !important;
+    font-weight: 800;
+    width: 75%;
+    max-width: 900px;
+    font-size: calc(62px + (95 - 62) * ((100vw - 522px) / (1912 - 522))) !important; }
+  #header p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: calc(25px + (35 - 25) * ((100vw - 522px) / (1912 - 522))) !important;
+    margin: 35px 0; }
+  #header .btn {
+    font-size: 20px;
+    padding: 35px 45px; }
+
+#imagebanner {
+  background-size: cover;
+  background-image: url("../resources/img/banner.jpg");
+  background-position: center top;
+  height: 430px;
+  background-attachment: fixed;
+  display: block;
+  margin: 0; }
+
+#agenda {
+  text-align: center;
+  margin: 0;
+  display: block;
+  padding: 100px 35px; }
+  #agenda h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    margin: 0;
+    font-size: calc(45px + (55 - 45) * ((100vw - 522px) / (1912 - 522))) !important; }
+  #agenda p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: calc(18px + (18 - 18) * ((100vw - 522px) / (1912 - 522))) !important;
+    width: 75%;
+    max-width: 796px;
+    margin: 35px auto; }
+
+#mission {
+  position: relative;
+  padding: 75px; }
+  #mission img, #mission .textbox {
+    max-width: 1200px;
+    width: 70%;
+    margin: 0 auto;
+    display: block; }
+
+#transparency {
+  padding: 105px 65px;
+  padding-top: 205px; }
+  #transparency h6 {
+    font-size: calc(20px + (25 - 20) * ((100vw - 522px) / (1912 - 522))) !important;
+    margin: 0; }
+  #transparency h2 {
+    font-size: calc(45px + (55 - 45) * ((100vw - 522px) / (1912 - 522))) !important;
+    line-height: 1.2;
+    margin-top: 10px;
+    max-width: 1000px; }
+  #transparency .btn {
+    margin: 30px;
+    margin-left: 0; }
+
+footer {
+  padding: 65px;
+  padding-top: 100px; }
+  footer h2 {
+    color: #4464ad;
+    font-size: 35px;
+    margin: 20px 0px; }
+  footer p {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 30px 0px; }
+  footer .fa {
+    font-size: 25px;
+    padding-right: 20px; }
+  footer .social {
+    padding: 20px 0px; }
+
+@media (max-width: 992px) {
+  nav {
+    padding: 0px 50px; }
+
+  #header h1 {
+    width: 75%; }
+
+  #mission {
+    padding: 25px; }
+    #mission img, #mission .textbox {
+      width: 100%; } }

@@ -1,0 +1,8 @@
+site: "YouPAC: the Youth Political Action Committee"
+baseurl: ""
+url: youpac.org
+permalink: /:title/
+collections:
+  - posts
+plugins:
+  - jekyll-sitemap
