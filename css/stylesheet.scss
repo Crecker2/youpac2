@@ -135,12 +135,16 @@ html{
 
 p{
   font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
 }
 
+section{
+  padding: 35px;
+}
 .btn{
   border-radius: 0px;
 }
@@ -181,6 +185,8 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', sans-serif;
     font-size: calc(25px + (35 - 25) * ((100vw - 522px) / (1912 - 522))) !important;
     margin: 35px 0;
+    width: 75%;
+    max-width: 900px;
   }
   .btn{
     font-size: 20px;
@@ -212,7 +218,7 @@ h1, h2, h3, h4, h5, h6 {
   p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: calc(18px + (18 - 18) * ((100vw - 522px) / (1912 - 522))) !important;
+    font-size: 18px !important;
     width: 75%;
     max-width: 796px;
     margin: 35px auto;
@@ -273,6 +279,52 @@ footer{
   }
 }
 //media queries
+
+
+// transparency page
+
+#header {
+  .transparency{
+    font-size: calc(40px + (55 - 40) * ((100vw - 823px) / (1912 - 823)));
+  }
+}
+#intro {
+  padding: 150px 75px;
+
+  .center {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1000px;
+  }
+}
+
+#tldr{
+  padding: 75px;
+  ul{
+    max-width: 1000px;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    li {
+      margin: 15px 10px;
+      list-style-type: disc;
+    }
+  }
+}
+#the-issue {
+  padding: 100px 75px;
+
+  p {
+    max-width: 1000px;
+    width: 80%;
+  }
+
+}
 
 @media(max-width: 992px){
   nav{
