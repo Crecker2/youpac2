@@ -1,5 +1,5 @@
 site: "YouPAC: the Youth Political Action Committee"
-baseurl: ""
+baseurl: "youpac2/"
 url: youpac.org
 permalink: /:title/
 collections:
