@@ -1,7 +1,9 @@
 $(document).ready(function(){
-    if(!location.href.match(/construction/)){
-      if(!Boolean(checkCookie("developer"))) {
-        location.href = "https://youpac.org/construction";
+    if(location.origin != "http://localhost:4000"){
+      if(!location.href.match(/construction/)){
+        if(!getCookie("developer")) {
+          location.href = "/construction";
+        }
       }
     }
     $('.sidenav').sidenav();
@@ -22,9 +24,4 @@ function getCookie(cname) {
     }
   }
   return "";
-}
-
-function checkCookie() {
-  var developer = getCookie("developer");
-  return developer;
 }

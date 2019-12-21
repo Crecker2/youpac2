@@ -131,6 +131,9 @@ section {
   padding: 25px 75px;
   padding-top: 10vmax;
   min-height: 90vh; }
+  #header a:hover {
+    opacity: .8;
+    border-bottom: #4464ad solid 2px; }
   #header h1 {
     font-family: "Open Sans", sans-serif !important;
     font-weight: 800;
@@ -143,6 +146,11 @@ section {
     margin: 35px 0;
     width: 75%;
     max-width: 900px; }
+    #header p a {
+      color: #4464ad;
+      text-decoration: none;
+      border-bottom: #4464ad dotted 2px;
+      transition: .3s all; }
   #header .btn {
     font-size: 20px;
     padding: 35px 45px; }
@@ -214,6 +222,50 @@ footer {
     padding-right: 20px; }
   footer .social {
     padding: 20px 0px; }
+
+#climate .center {
+  text-align: left; }
+  #climate .center h2 {
+    text-align: center; }
+  #climate .center ul li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    list-style-type: disc; }
+
+#guns .center {
+  text-align: left; }
+  #guns .center h2 {
+    text-align: center; }
+#guns a {
+  border-bottom: #444 dotted 2px;
+  color: #333;
+  transition: .3s all; }
+#guns a:hover {
+  opacity: .6;
+  border-bottom: #444 solid 2px; }
+#guns ul li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  text-align: left;
+  list-style-type: disc; }
+
+#loans .center {
+  text-align: left; }
+  #loans .center h2 {
+    text-align: center; }
+  #loans .center ul li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    list-style-type: disc; }
+  #loans .center p a {
+    border-bottom: #4464ad dotted 2px;
+    color: #4464ad;
+    transition: .3s all; }
+  #loans .center p a:hover {
+    opacity: .6;
+    border-bottom: #000 solid 2px; }
 
 #header .transparency {
   font-size: calc(40px + (55 - 40) * ((100vw - 823px) / (1912 - 823))); }
