@@ -253,7 +253,11 @@ footer {
 
 #logo {
   padding: 15px;
-  padding-right: 30px; }
+  padding-right: 30px;
+  position: sticky;
+  transition: .3s all;
+  top: 10%;
+  left: 5%; }
   #logo h1 {
     text-align: center;
     color: #4464ad;
@@ -264,7 +268,8 @@ footer {
 #articlelist {
   border-left: #eee solid 1px;
   padding: 25px;
-  padding-left: 50px; }
+  padding-left: 50px;
+  float: right; }
   #articlelist a {
     color: inherit; }
     #articlelist a .article {
@@ -286,6 +291,9 @@ footer {
       #articlelist a .article .author {
         font-style: italic;
         font-size: 14px; }
+
+#articlelist::after {
+  clear: both; }
 
 #article .banner-img {
   width: 90%;
@@ -335,6 +343,9 @@ footer {
     text-align: left; }
 
   #blog #logo {
+    position: relative;
+    top: unset;
+    left: unset;
     padding: 15px; }
     #blog #logo p {
       width: 85%;

@@ -360,6 +360,10 @@ footer{
 #logo {
   padding: 15px;
   padding-right: 30px;
+  position: sticky;
+  transition: .3s all;
+  top: 10%;
+  left: 5%;
 
   h1 {
     text-align: center;
@@ -374,6 +378,7 @@ footer{
   border-left: #eee solid 1px;
   padding: 25px;
   padding-left: 50px;
+  float: right;
 
   a {
     color: inherit;
@@ -410,6 +415,10 @@ footer{
 
     }
   }
+}
+
+#articlelist::after{
+  clear: both;
 }
 
 // Blog article
@@ -485,6 +494,9 @@ footer{
   #blog {
 
     #logo {
+      position: relative;
+      top: unset;
+      left: unset;
       p {
         width: 85%;
         margin: 15px auto;
