@@ -1,8 +1,10 @@
 site: "YouPAC: the Youth Political Action Committee"
-baseurl: "youpac2/"
+baseurl: "/youpac2"
 url: youpac.org
 permalink: /:title/
 collections:
-  - posts
+  posts:
+    output: true
+    permalink: /blog/:title
 plugins:
   - jekyll-sitemap

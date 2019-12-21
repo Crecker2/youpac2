@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>youpac.org/youpac2/blog/a-test-post</loc>
+<lastmod>2019-12-20T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>youpac.org/youpac2/blog/another-test-post</loc>
+<lastmod>2019-12-20T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>youpac.org/youpac2/blog/yet-another-test-post</loc>
+<lastmod>2019-12-20T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>youpac.org/youpac2/blog/</loc>
+</url>
+<url>
 <loc>youpac.org/youpac2/</loc>
+</url>
+<url>
+<loc>youpac.org/youpac2/mission/</loc>
 </url>
 <url>
 <loc>youpac.org/youpac2/transparency/</loc>

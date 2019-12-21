@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>YouPAC | Blog - {{page.title}}</title>
+    {% include general.html %}
+
+  </head>
+  <body id="article" class="light-darkblue">
+    {% include header.html %}
+
+    {% if page.img %}
+      <img class="banner-img" src="/resources/img/{{page.img}}" alt="{{page.alt}}">
+      <div class="textbox-padding">
+        <h1 class="title">{{page.title}}</h1>
+        {% if page.subtitle%}
+          <h2 class="subtitle">{{page.subtitle}}</h2>
+        {% endif %}
+        <p class="byline">by {{page.author}}</p>
+      </div>
+    {% else %}
+      <div class="textbox">
+        <h1 class="title">{{page.title}}</h1>
+        {% if page.subtitle%}
+          <h2 class="subtitle">{{page.subtitle}}</h2>
+        {% endif %}
+        <p class="byline">by {{page.author}}</p>
+      </div>
+    {% endif%}
+
+    <div class="articlebody">
+      {{content}}
+    </div>
+    <script src="{{'/js/scripts.js' | relative_url}}" charset="utf-8"></script>
+    {% include footer.html%}
+  </body>
+</html>

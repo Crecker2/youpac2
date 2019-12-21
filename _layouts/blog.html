@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>YouPAC | Blog </title>
+    {% include general.html %}
+  </head>
+  <body id="blog">
+    {% include header.html %}
+    <div class="container light-darkblue">
+      <div class="row">
+        <div class="col m12 l5" id="logo">
+          <div class="textcontainer">
+            <h1>YouPAC Blog</h1>
+            <p>One-stop shop for our blog posts, press releases, and other official communication.</p>
+          </div>
+        </div>
+        <div class="col m12 l7" id="articlelist">
+          <ul>
+            {% for post in site.posts %}
+            <a href="{{post.url}}" class="container">
+              <li class="article row">
+                <h2>{{post.title}}</h2>
+                <p class="type">{{post.type}}</p>
+                <p>{{post.brief}}</p>
+                <p class="author">{{post.author}}</p>
+              </li>
+            </a>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+    <script src="{{'/js/scripts.js' | relative_url }}" charset="utf-8"></script>
+  </body>
+</html>

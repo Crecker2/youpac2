@@ -31,6 +31,7 @@ nav{
   }
 
   ul li {
+    list-style-type: none !important;
     a {
       color: #000;
       margin: 0px 10px;
@@ -81,7 +82,7 @@ nav{
     background-color: #4464ad;
   }
 
-  .textbox{
+  .textbox, .textbox-padding { // textbox-padding is used in the "post" section
     background-color: #4464ad;
     color: #fff;
     .btn{
@@ -136,6 +137,17 @@ html{
 p{
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: #fff dotted 2px;
+    transition: .3s all;
+  }
+  a:hover{
+    opacity: .8;
+    border-bottom: #fff solid 2px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -144,11 +156,20 @@ h1, h2, h3, h4, h5, h6 {
 
 section{
   padding: 35px;
+
+  .center {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    max-width: 1000px;
+  }
+
 }
 .btn{
   border-radius: 0px;
 }
-.textbox{
+.textbox, .textbox-padding {
   padding: 35px 65px;
   h1{
     font-family: 'Poppins', sans-serif;
@@ -213,7 +234,7 @@ section{
     font-family: 'Poppins', sans-serif;
     color: #fff;
     margin: 0;
-      font-size: calc(45px + (55 - 45) * ((100vw - 522px) / (1912 - 522))) !important;
+    font-size: calc(45px + (55 - 45) * ((100vw - 522px) / (1912 - 522))) !important;
   }
   p {
     font-family: 'Open Sans', sans-serif;
@@ -289,14 +310,20 @@ footer{
   }
 }
 #intro {
-  padding: 150px 75px;
+  padding: 150px 25px;
 
   .center {
     text-align: center;
     display: block;
     margin: 0 auto;
     width: 80%;
-    max-width: 1000px;
+    max-width: 1200px;
+  }
+
+  p{
+    width: 85%;
+    margin: 15px auto;
+    text-align: left;
   }
 }
 
@@ -326,6 +353,112 @@ footer{
 
 }
 
+
+// blog section
+
+
+#logo {
+  padding: 15px;
+  padding-right: 30px;
+
+  h1 {
+    text-align: center;
+    color: #4464ad;
+    font-size: calc(45px + (55 - 45) * ((100vw - 522px) / (1912 - 522))) !important;
+  }
+  p {
+    text-align: center;
+  }
+}
+#articlelist {
+  border-left: #eee solid 1px;
+  padding: 25px;
+  padding-left: 50px;
+
+  a {
+    color: inherit;
+
+    .article {
+      margin-bottom: 35px;
+      width: 100%;
+
+      h2 {
+        font-size: 25px;
+        margin: 0;
+        font-weight: bold;
+      }
+
+      .type {
+        font-size: 18px;
+        margin: 5px 0px;
+        color: #4464ad;
+      }
+
+      p{
+        margin: 0;
+        font-size: 18px;
+      }
+
+      .author::before{
+        content: 'By: '
+      }
+
+      .author{
+        font-style: italic;
+        font-size: 14px;
+      }
+
+    }
+  }
+}
+
+// Blog article
+
+#article {
+  .banner-img{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  .textbox, .textbox-padding {
+    width: 70%;
+    max-width: 900px;
+    margin: 0 auto;
+
+    .title {
+      font-size: calc(40px + (55 - 40) * ((100vw - 823px) / (1912 - 823))) !important;
+    }
+    .subtitle {
+      font-size: calc(20px + (25 - 20) * ((100vw - 823px) / (1912 - 823))) !important;
+      text-align: center;
+      font-weight: 300;
+      margin: 0;
+    }
+    .byline {
+      font-weight: 300;
+      text-align: center;
+      margin: 0;
+    }
+  }
+
+  .textbox-padding {
+    margin-top: -100px;
+    position: relative;
+  }
+  .articlebody{
+    padding: 15px;
+    margin: 25px auto;
+    display: block;
+    width: 60%;
+    p {
+      margin-bottom: 15px;
+
+    }
+  }
+}
+
 @media(max-width: 992px){
   nav{
     padding: 0px 50px;
@@ -339,6 +472,48 @@ footer{
     padding: 25px;
     img, .textbox{
       width: 100%;
+    }
+  }
+
+  #intro {
+    p {
+      width: 90%;
+      text-align: left;
+    }
+  }
+
+  #blog {
+
+    #logo {
+      p {
+        width: 85%;
+        margin: 15px auto;
+      }
+      padding: 15px;
+    }
+
+    #articlelist {
+      border-left: none;
+      border-top: #eee solid 1px;
+    }
+    a {
+      .article {
+      width: 90%;
+      }
+    }
+  }
+
+  #article {
+    .banner-img{
+      width: 100%;
+    }
+
+    .textbox{
+
+    }
+
+    .articlebody{
+      width: 80%;
     }
   }
 }
