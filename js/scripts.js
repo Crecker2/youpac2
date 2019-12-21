@@ -1,7 +1,7 @@
 $(document).ready(function(){
     if(!location.href.match(/construction/)){
-      if(!checkCookie("developer")) {
-        window.location.href = "https://youpac.org/construction";
+      if(!Boolean(checkCookie("developer"))) {
+        location.href = "https://youpac.org/construction";
       }
     }
     $('.sidenav').sidenav();
