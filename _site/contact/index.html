@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <title>YouPAC | Blog - this is a test post</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>YouPAC | Contact</title>
+
     <link rel="stylesheet" href="/css/materialize.min.css">
 <link rel="stylesheet" href="/css/stylesheet.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -15,7 +17,33 @@
 
 
   </head>
-  <body id="article" class="light-darkblue">
+  <body>
+    <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v5.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="106520594190758"
+  theme_color="#4464ad"
+  logged_in_greeting="Have questions or concerns? Hit us up on Facebook Messenger!"
+  logged_out_greeting="Have questions or concerns? Hit us up on Facebook Messenger!">
+      </div>
     <header class="light-darkblue">
   <nav>
     <div class="nav-wrapper">
@@ -42,26 +70,27 @@
 </header>
 
 
-    
-      <img class="banner-img" src="/resources/img/banner.jpg" alt="">
-      <div class="textbox-padding">
-        <h1 class="title">this is a test post</h1>
-        
-          <h2 class="subtitle">This is a subtitle, a  subheader, a secondary headline, something like that. Whatever you will.</h2>
-        
-        <p class="byline">by Josh Fayer</p>
-      </div>
-    
+    <section id="header" class="light-darkblue">
+  <h2 class="transparency">Contact Us</h2>
+  <p>There are a few ways for you to get in touch with us. You can access them here!</p>
+</section>
 
-    <div class="articlebody">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<section class="darkblue-light" id="intro">
+  <div class="center">
+    <h2>Facebook Messenger</h2>
+    <p>Use the chat pop-up on this page to chat with us in Messenger, or go to <a href="https://m.me/106520594190758">a Facebook Messenger chat window</a> with us!</p>
+  </div>
+</section>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<section class="light-allblue" id="vision">
+  <div class="center">
+    <h2>Email</h2>
+    <p>For press inquiries, email <a href="mailto:press@youpac.org">press@youpac.org</a>. For all other questions, comments, or concerns, please email <a href="mailto:contact@youpac.org">contact@youpac.org</a>.</p>
+  </div>
+</section>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-    </div>
-    <script src="/js/scripts.js" charset="utf-8"></script>
+
     <footer class="light-darkblue">
   <h2>YouPAC</h2>
   <p>The Youth Political Action Committee</p>
@@ -71,5 +100,6 @@
   </div>
 </footer>
 
+    <script src="/js/scripts.js" charset="utf-8"></script>
   </body>
 </html>
