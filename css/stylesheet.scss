@@ -11,6 +11,7 @@ nav{
   box-shadow: none;
   color: #000;
   font-family: 'Poppins', sans-serif;
+  animation: slidein 2s;
 
   .brand-logo{
     color: #000;
@@ -69,6 +70,7 @@ nav{
 
 /* Color definitions */
 .light-darkblue{
+
   .btn{
     background-color: #4464ad;
     color: #fff;
@@ -158,11 +160,25 @@ section{
   padding: 35px;
 
   .center {
-    text-align: center;
+    text-align: left;
     display: block;
     margin: 0 auto;
     width: 75%;
     max-width: 1000px;
+
+    h2 {
+      text-align: center;
+    }
+
+    ul {
+      li {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        text-align: left;
+        list-style-type: disc;
+      }
+    }
+
   }
 
 }
@@ -271,6 +287,23 @@ section{
 
 }
 
+#values {
+  padding: 75px;
+  ul {
+    max-width: 1000px;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    text-align: left;
+
+    li {
+
+    }
+  }
+
+}
 #transparency{
   padding: 105px 65px;
   padding-top: 205px;
@@ -405,12 +438,12 @@ footer{
     margin: 0 auto;
     width: 80%;
     max-width: 1200px;
-  }
 
-  p{
-    width: 85%;
-    margin: 15px auto;
-    text-align: left;
+      p{
+        width: 85%;
+        margin: 15px auto;
+        text-align: center;
+      }
   }
 }
 
@@ -435,11 +468,22 @@ footer{
 
   p {
     max-width: 1000px;
-    width: 80%;
+    width: 85%;
+    margin: 10px auto;
   }
 
 }
 
+#the-solution {
+  padding: 100px 75px;
+
+  p {
+    max-width: 1000px;
+    width: 85%;
+    margin: 10px auto;
+  }
+
+}
 
 // blog section
 
@@ -572,6 +616,12 @@ footer{
     padding: 25px;
     img, .textbox{
       width: 100%;
+    }
+  }
+
+  #values {
+    ul {
+      width: 90%;
     }
   }
 

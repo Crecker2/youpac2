@@ -5,7 +5,8 @@ nav {
   background: none;
   box-shadow: none;
   color: #000;
-  font-family: 'Poppins', sans-serif; }
+  font-family: 'Poppins', sans-serif;
+  animation: slidein 2s; }
   nav .brand-logo {
     color: #000; }
     nav .brand-logo .semi-bold {
@@ -105,11 +106,18 @@ h1, h2, h3, h4, h5, h6 {
 section {
   padding: 35px; }
   section .center {
-    text-align: center;
+    text-align: left;
     display: block;
     margin: 0 auto;
     width: 75%;
     max-width: 1000px; }
+    section .center h2 {
+      text-align: center; }
+    section .center ul li {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 18px;
+      text-align: left;
+      list-style-type: disc; }
 
 .btn {
   border-radius: 0px; }
@@ -190,6 +198,17 @@ section {
     width: 70%;
     margin: 0 auto;
     display: block; }
+
+#values {
+  padding: 75px; }
+  #values ul {
+    max-width: 1000px;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    text-align: left; }
 
 #transparency {
   padding: 105px 65px;
@@ -278,10 +297,10 @@ footer {
     margin: 0 auto;
     width: 80%;
     max-width: 1200px; }
-  #intro p {
-    width: 85%;
-    margin: 15px auto;
-    text-align: left; }
+    #intro .center p {
+      width: 85%;
+      margin: 15px auto;
+      text-align: center; }
 
 #tldr {
   padding: 75px; }
@@ -301,7 +320,15 @@ footer {
   padding: 100px 75px; }
   #the-issue p {
     max-width: 1000px;
-    width: 80%; }
+    width: 85%;
+    margin: 10px auto; }
+
+#the-solution {
+  padding: 100px 75px; }
+  #the-solution p {
+    max-width: 1000px;
+    width: 85%;
+    margin: 10px auto; }
 
 #logo {
   padding: 15px;
@@ -389,6 +416,9 @@ footer {
     padding: 25px; }
     #mission img, #mission .textbox {
       width: 100%; }
+
+  #values ul {
+    width: 90%; }
 
   #intro p {
     width: 90%;
