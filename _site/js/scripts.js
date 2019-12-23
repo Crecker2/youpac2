@@ -9,7 +9,7 @@ $(document).ready(function(){
     $('.sidenav').sidenav();
 });
 
-// 
+//
 // function getCookie(cname) {
 //   var name = cname + "=";
 //   var decodedCookie = decodeURIComponent(document.cookie);
