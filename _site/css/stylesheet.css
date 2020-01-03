@@ -34,6 +34,7 @@ nav {
     color: #000;
     font-size: 35px;
     margin: 25px 0;
+    padding: 0px 30px !important;
     display: block; }
   .sidenav li .btn {
     width: 70%;
@@ -306,7 +307,7 @@ footer {
     #intro .center p {
       width: 85%;
       margin: 15px auto;
-      text-align: center; }
+      text-align: left; }
 
 #tldr {
   padding: 75px; }
@@ -425,12 +426,17 @@ footer {
     #mission img, #mission .textbox {
       width: 100%; }
 
-  #values ul {
-    width: 90%; }
+  #values {
+    padding: 25px; }
+    #values ul {
+      width: 90%; }
 
-  #intro p {
-    width: 90%;
-    text-align: left; }
+  #intro {
+    padding: 25px;
+    padding-bottom: 50px; }
+    #intro p {
+      width: 90%;
+      text-align: left; }
 
   #blog #logo {
     position: relative;

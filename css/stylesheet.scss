@@ -55,6 +55,7 @@ nav{
     color: #000;
     font-size: 35px;
     margin: 25px 0;
+    padding: 0px 30px !important;
     display: block;
   }
 
@@ -451,7 +452,7 @@ footer{
       p{
         width: 85%;
         margin: 15px auto;
-        text-align: center;
+        text-align: left;
       }
   }
 }
@@ -631,12 +632,16 @@ footer{
   }
 
   #values {
+    padding: 25px;
     ul {
       width: 90%;
     }
   }
 
   #intro {
+    padding: 25px;
+    padding-bottom: 50px;
+
     p {
       width: 90%;
       text-align: left;
