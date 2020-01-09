@@ -326,6 +326,22 @@ section{
   }
 }
 
+#emaillist{
+  h1{
+    text-align: center;
+  }
+  iframe{
+    border: none;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+
+    width: 100%;
+    min-height: 300px;
+    height: unset;
+    height: -webkit-fill-available;
+  }
+}
 footer{
   padding: 65px;
   padding-top: 100px;
@@ -631,6 +647,13 @@ footer{
     }
   }
 
+  #emaillist{
+    iframe {
+      input[type=text] {
+        width: 90%;
+      }
+    }
+  }
   #values {
     padding: 25px;
     ul {

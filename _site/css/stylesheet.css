@@ -228,6 +228,18 @@ section {
     margin: 30px;
     margin-left: 0; }
 
+#emaillist h1 {
+  text-align: center; }
+#emaillist iframe {
+  border: none;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 300px;
+  height: unset;
+  height: -webkit-fill-available; }
+
 footer {
   padding: 65px;
   padding-top: 100px; }
@@ -425,6 +437,9 @@ footer {
     padding: 25px; }
     #mission img, #mission .textbox {
       width: 100%; }
+
+  #emaillist iframe input[type=text] {
+    width: 90%; }
 
   #values {
     padding: 25px; }
