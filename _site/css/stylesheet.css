@@ -1,6 +1,6 @@
 nav {
-  height: 150px;
-  line-height: 150px;
+  height: 100px;
+  line-height: 100px;
   padding: 0px 75px;
   background: none;
   box-shadow: none;
@@ -13,8 +13,8 @@ nav {
       font-weight: 600; }
   nav .sidenav-trigger i {
     color: #000;
-    height: 150px !important;
-    line-height: 150px !important;
+    height: 100px !important;
+    line-height: 100px !important;
     font-size: 2.5rem; }
   nav ul li {
     list-style-type: none !important; }
@@ -137,6 +137,11 @@ section {
     font-size: calc(20px + (22 - 20) * ((100vw - 823px) / (1912 - 823))) !important; }
   .textbox .btn, .textbox-padding .btn {
     padding: 30px 40px !important; }
+
+#default #header {
+  background: linear-gradient(160deg, rgba(68, 100, 173, 0.6) 30%, rgba(75, 15, 193, 0.6)), url("../resources/img/capitol.jpg");
+  background-size: cover;
+  background-position: center; }
 
 #header {
   padding: 25px 75px;
