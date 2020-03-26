@@ -7,10 +7,9 @@ nav {
   color: #000;
   font-family: 'Poppins', sans-serif;
   animation: slidein 2s; }
-  nav .brand-logo {
-    color: #4464ad; }
-    nav .brand-logo .semi-bold {
-      font-weight: 600; }
+  nav .brand-logo img {
+    max-width: 150px;
+    vertical-align: middle; }
   nav .sidenav-trigger i {
     color: #000;
     height: 100px !important;
@@ -30,12 +29,11 @@ nav {
 .sidenav {
   font-family: 'Poppins', sans-serif;
   padding: 25px 0; }
-  .sidenav .brand-logo {
-    color: #4464ad;
-    font-size: 35px;
-    margin: 25px 0;
-    padding: 0px 30px !important;
-    display: block; }
+  .sidenav .brand-logo img {
+    width: 200px;
+    vertical-align: middle;
+    display: block;
+    margin: 15px auto; }
   .sidenav li .btn {
     width: 70%;
     margin: 35px auto !important;
@@ -246,6 +244,9 @@ section {
 footer {
   padding: 65px;
   padding-top: 100px; }
+  footer .logo {
+    width: 200px;
+    display: block; }
   footer h2 {
     color: #4464ad;
     font-size: 35px;
@@ -314,6 +315,44 @@ footer {
     opacity: .6;
     border-bottom: #000 solid 2px; }
 
+#platformpage #policies {
+  max-width: 1600px;
+  display: block;
+  margin: 10px auto; }
+  #platformpage #policies .policy {
+    height: 400px;
+    display: inline-table;
+    padding: 0px 45px;
+    margin: 5px;
+    width: 32%;
+    box-sizing: border-box;
+    transition: .3s background; }
+    #platformpage #policies .policy .text {
+      color: #fff;
+      display: table-cell; }
+  #platformpage #policies .climate {
+    background: #4cbee6; }
+    #platformpage #policies .climate:hover {
+      background: #6fd1f3; }
+  #platformpage #policies .guns {
+    background: #ab023e; }
+    #platformpage #policies .guns:hover {
+      background: #c4275f; }
+  #platformpage #policies .loans {
+    background: #ef4b4b; }
+    #platformpage #policies .loans:hover {
+      background: #f37171; }
+#platformpage #short {
+  max-width: 80%; }
+
+@media (max-width: 1130px) {
+  #platformpage #policies .policy {
+    display: block;
+    width: 95%;
+    max-width: 500px;
+    margin: 10px auto;
+    height: unset;
+    padding: 45px; } }
 #header .transparency {
   font-size: calc(40px + (55 - 40) * ((100vw - 823px) / (1912 - 823))); }
 
