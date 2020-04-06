@@ -241,6 +241,7 @@ footer .social a { color: #000; }
   #header h1 { width: 75%; }
   #mission { padding: 25px; }
   #mission img, #mission .textbox { width: 100%; }
+  #emaillist iframe { min-height: 475px; }
   #emaillist iframe input[type=text] { width: 90%; }
   #values { padding: 25px; }
   #values ul { width: 90%; }
