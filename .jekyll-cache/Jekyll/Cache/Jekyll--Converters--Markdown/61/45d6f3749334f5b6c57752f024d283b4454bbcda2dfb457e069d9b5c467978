@@ -1,0 +1,39 @@
+I"ó<div id="platformpage">
+  <section id="header" class="light-darkblue">
+    <h2 class="transparency">Platform</h2>
+    <p>We're advocating common-sense reform in three policy areas: <a href="#climate">climate change</a>, <a href="#guns">gun control</a>, and <a href="#loans">student loan policy</a>. Browse each policy on its own page, or skip right to the <a href="#short">short version</a>.</p>
+  </section>
+
+  <section id="policies">
+    <a href="#">
+      <div class="policy climate">
+        <div class="text">
+          <h1>Climate Change</h1>
+          <p>We need to take bold, transformative action that will save our planet and spur economic growth.</p>
+        </div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="policy guns">
+        <div class="text">
+          <h1>Gun Control</h1>
+          <p>A platform cenetered around achievable, meaningful regulations that will save lives while respecting law-abiding citizens' 2nd Amendment Rights.</p>
+        </div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="policy loans">
+        <div class="text">
+          <h1>Student Loans</h1>
+          <p>An anti-corruption and pro-consumer student loan reform package that will end predatory federal lending policies and protect vulnerable borrowers.</p>
+        </div>
+      </div>
+    </a>
+  </section>
+  <!-- <section id="short">
+    <h1>The Short Verison</h1>
+    <p>Each of our policies is based in research and borrows from leading national ideas in these spaces.</p>
+  </section> -->
+</div>
+
+:ET

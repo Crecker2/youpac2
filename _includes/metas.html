@@ -1,0 +1,35 @@
+{% if page.description %}
+<meta name="description" content="{{page.description}}">
+{% else %}
+<meta name="description" content="Official website of the Youth Political Action Committee. Advocating a progressive, youth-focused agenda for a better future.">
+{% endif %}
+
+<meta name="keywords" content="YouPAC,Youth Political Action Commitee,pac,Youth Political Action Committee (YouPAC),{{page.keywords}}">
+
+<meta property="og:title" content="YouPAC | {{page.title}}">
+{% if page.description %}
+<meta property="og:description" content="{{page.description}}">
+{% else %}
+<meta property="og:description" content="Official website of the Youth Political Action Committee. Advocating a progressive, youth-focused agenda for a better future.">
+{% endif %}
+
+{% if page.img %}
+<meta property="og:image" content="/resources/img/{{page.img}}">
+{% else %}
+<meta property="og:image" content="{{'/resources/img/youpac-low-res-logo.png' | relative_url}}">
+{% endif %}
+<meta property="og:url" content="{{page.url}}">
+
+<meta name="twitter:title" content="YouPAC | {{page.title}}">
+{% if page.description %}
+<meta name="twitter:description" content="{{page.description}}">
+{% else %}
+<meta name="twitter:description" content="Official website of the Youth Political Action Committee. Advocating a progressive, youth-focused agenda for a better future.">
+{% endif %}
+
+{% if page.img %}
+<meta name="twitter:image" content="/resources/img/{{page.img}}">
+{% else %}
+<meta name="twitter:image" content="{{'/resources/img/youpac-low-res-logo.png' | relative_url}}">
+{% endif %}
+<meta name="twitter:card" content="summary_large_image">
