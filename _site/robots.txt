@@ -1,1 +1,1 @@
-Sitemap: youpac.org/sitemap.xml
+Sitemap: https://youpac.org/sitemap.xml

@@ -18,7 +18,7 @@
 {% else %}
 <meta property="og:image" content="{{'/resources/img/youpac-low-res-logo.png' | absolute_url}}">
 {% endif %}
-<meta property="og:url" content="{{page.url}}">
+<meta property="og:url" content="{{page.url | absolute_url}}">
 
 <meta name="twitter:title" content="YouPAC | {{page.title}}">
 {% if page.description %}
