@@ -14,9 +14,9 @@
 {% endif %}
 
 {% if page.img %}
-<meta property="og:image" content="/resources/img/{{page.img}}">
+<meta property="og:image" content="{{'/resources/img/' | absolute_url}}{{page.img}}">
 {% else %}
-<meta property="og:image" content="{{'/resources/img/youpac-low-res-logo.png' | relative_url}}">
+<meta property="og:image" content="{{'/resources/img/youpac-low-res-logo.png' | absolute_url}}">
 {% endif %}
 <meta property="og:url" content="{{page.url}}">
 
@@ -28,8 +28,8 @@
 {% endif %}
 
 {% if page.img %}
-<meta name="twitter:image" content="/resources/img/{{page.img}}">
+<meta name="twitter:image" content="{{'/resources/img/' | absolute_url}}{{page.img}}">
 {% else %}
-<meta name="twitter:image" content="{{'/resources/img/youpac-low-res-logo.png' | relative_url}}">
+<meta name="twitter:image" content="{{'/resources/img/youpac-low-res-logo.png' | absolute_url }}">
 {% endif %}
 <meta name="twitter:card" content="summary_large_image">
